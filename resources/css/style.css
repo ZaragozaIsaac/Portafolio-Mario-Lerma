@@ -1,88 +1,148 @@
-html,body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body{
+    font-family:Arial, sans-serif ;
     margin:0;
     padding:0;
-    height:100%;
+    background-color: #1c2a48;
+    color:#ffffff;
+    line-height:1.6;
+
+
 }
 
+.container{
+    padding:20px;
+    margin: 40px 20px;
+    background-color: #273a59;
+    border-radius: 8px;
+}
 
-nav{
-    background-color: grey;
-    top:0;
-    left:0;
-    position:fixed;
+/* Navigation Styles */
+nav.busqueda {
+    background-color: #16203b;
+    padding: 10px 0;
+    text-align: right; /* Texto alineado a la derecha */
     width: 100%;
-    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade sombra para mejorar la visual */
-}
-
-.busqueda{
-    display: flex;
-    justify-content: right;
-    
-}
-
-.busqueda ul li{
-    list-style-type: none;
-    display: inline-flex;
-    margin-right: 50px;
-    
-}
-
-.busqueda ul li a{
-    color:inherit;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 22px;
-    font-weight: bold;
+    left:0;
     top:0;
+    position: fixed;
+    z-index: 1000;
 }
 
-
-.perfil {
-    border: 2px solid black;
+nav.busqueda ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 20px;
 }
 
-
-.perfil h1{
-    margin-top: 100px;
-    font-size: 40px;
+nav.busqueda ul li {
+    display: inline;
+    margin-left: 20px;
 }
 
-
-.perfil p{
-    text-align:end;
-    line-height: 2.5;
+nav.busqueda ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.educacion {
-    border: 2px solid black;
+nav.busqueda ul li a:hover {
+    color: #ffcc00; /* Efecto hover */
 }
 
-.experiencia{
-    border: 2px solid black;
+/* Header Styles */
+h1 {
+    color: #ffcc00; /* Título destacado en dorado */
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-
-footer{
-    background-color: grey;
-    
-    
+.perfil h1 {
+    text-align: left;
 }
 
-.Contacto{
-
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px;
-    
-
+.educacion h1 {
+    text-align: right;
 }
 
-.Contacto  li{
+.experiencia h1 {
+    text-align: left;
+}
+
+.habilidades h1 {
+    text-align: right;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+/* Paragraph and List Styles */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+ul {
     list-style-type: none;
-    align-items: center;
+    padding: 0;
 }
+
+/* Estilo específico para el contenedor de habilidades */
+.habilidades ul {
+    display: flex;
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se distribuyan en más de una fila */
+    
+}
+
+.habilidades ul li {
+    width: 45%; /* Cada columna ocupará el 45% del ancho del contenedor */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #16203b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Specific Section Styles */
+.perfil, .educacion, .experiencia, .habilidades {
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav.busqueda ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: right;
+    }
+
+    .habilidades ul li {
+        width: 100%; /* En pantallas pequeñas, las columnas ocuparán todo el ancho */
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
