@@ -1,5 +1,8 @@
-body{
+html,body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
 
@@ -35,7 +38,51 @@ nav{
     top:0;
 }
 
+
+.perfil {
+    border: 2px solid black;
+}
+
+
 .perfil h1{
     margin-top: 100px;
+    font-size: 40px;
+}
+
+
+.perfil p{
+    text-align:end;
+    line-height: 2.5;
+}
+
+.educacion {
+    border: 2px solid black;
+}
+
+.experiencia{
+    border: 2px solid black;
+}
+
+
+footer{
+    background-color: grey;
+    
+    
+}
+
+.Contacto{
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    
 
 }
+
+.Contacto  li{
+    list-style-type: none;
+    align-items: center;
+}
+
+
